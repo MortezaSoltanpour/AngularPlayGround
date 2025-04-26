@@ -4,3 +4,9 @@
   <li>Height : {{ myProduct.height }}</li>
   <li>Wide : {{ myProduct.wide }}</li>
 </ul>
+<strong>Products</strong>
+<ul>
+  <li *ngFor="let item of products">
+    <strong>{{ item.name }} </strong>: {{ item.price }}
+  </li>
+</ul>
