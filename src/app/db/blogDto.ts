@@ -4,4 +4,5 @@ export interface BlogDto {
   author: string;
   brief: string;
   body: string;
+  liked: boolean;
 }

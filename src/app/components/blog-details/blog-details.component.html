@@ -9,6 +9,11 @@
       <div class="body m-1">
         {{ blog.body }}
       </div>
+      <div class="footer m-1">
+        <button (click)="handleLikeButton(blog.id)" class="btn btn-primary">
+          {{ blog.liked ? "liked" : "like" }}
+        </button>
+      </div>
     </div>
   </div>
 </div>

@@ -14,6 +14,12 @@
           <span class="text-muted m-1">
             {{ item.author }}
           </span>
+          <span class="m-1 text-success" *ngIf="item.liked">
+            you liked it
+          </span>
+          <span class="m-1 text-warning" *ngIf="!item.liked">
+            you didn't liked it
+          </span>
           <div class="footer m-1">
             <button
               [attr.blogid]="item.id"
@@ -28,7 +34,10 @@
     </div>
   </div>
   <div class="col-md-6">
-    <app-blog-details [blogId]="idSelected"></app-blog-details>
+    <app-blog-details
+      (isLiked)="handleLikeClickedFromDetails($event)"
+      [blogId]="idSelected"
+    ></app-blog-details>
   </div>
 </div>
 <hr />

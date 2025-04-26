@@ -23,4 +23,8 @@ export class BlogListsComponent {
     const blogIdAttr = button.getAttribute('blogid');
     this.idSelected = blogIdAttr ? parseInt(blogIdAttr, 10) : 0;
   }
+
+  handleLikeClickedFromDetails(e: any) {
+    console.log(e);
+  }
 }

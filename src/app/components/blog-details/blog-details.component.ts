@@ -1,4 +1,10 @@
-import { Component, Input, input, SimpleChanges } from '@angular/core';
+import {
+  Component,
+  EventEmitter,
+  Input,
+  Output,
+  SimpleChanges,
+} from '@angular/core';
 import { BlogDto } from '../../db/blogDto';
 import { NgIf } from '@angular/common';
 import { getBlogById } from '../../db/blogDb';
@@ -26,5 +32,12 @@ export class BlogDetailsComponent {
 
   loadBlogDetails(id: number) {
     this.blog = getBlogById(this.blogId);
+  }
+
+  @Output('isLiked')
+  buttonLikeEventEmitter = new EventEmitter<number>();
+
+  handleLikeButton(id: number) {
+    this.buttonLikeEventEmitter.emit(id);
   }
 }
