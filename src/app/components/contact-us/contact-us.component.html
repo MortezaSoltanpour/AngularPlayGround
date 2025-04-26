@@ -1,0 +1,59 @@
+<form (submit)="handleSubmit()">
+  <div class="container">
+    <div class="">
+      <div class="col-md-4 mb-3">
+        <label for="firstname">First name</label>
+        <input
+          [(ngModel)]="contactus.firstname"
+          type="text"
+          id="firstname"
+          name="firstname"
+          class="form-control"
+        />
+      </div>
+      <div class="col-md-4 mb-3">
+        <label for="lastname">Last name</label>
+        <input
+          class="form-control"
+          [(ngModel)]="contactus.lastname"
+          type="text"
+          id="lastname"
+          name="lastname"
+        />
+      </div>
+      <div class="col-md-4 mb-3">
+        <label for="mobile">Mobile</label>
+        <input
+          class="form-control"
+          [(ngModel)]="contactus.mobile"
+          type="text"
+          id="mobile"
+          name="mobile"
+        />
+      </div>
+      <div class="col-md-4 mb-3">
+        <label for="email">Email</label>
+        <input
+          class="form-control"
+          [(ngModel)]="contactus.email"
+          type="text"
+          id="email"
+          name="email"
+        />
+      </div>
+      <div class="col-md-4 mb-3">
+        <label for="Body">Body</label>
+        <textarea
+          [(ngModel)]="contactus.body"
+          type="text"
+          class="form-control"
+          id="Body"
+          name="Body"
+        ></textarea>
+      </div>
+      <div class="col-md-4 mb-3">
+        <button class="btn btn-success" type="submit">Submit form</button>
+      </div>
+    </div>
+  </div>
+</form>
