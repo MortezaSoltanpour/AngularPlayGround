@@ -1,0 +1,10 @@
+<form>
+  <label for="title">Title</label>
+  <input
+    placeholder="morteza"
+    (keyup)="handleChangeTitle($event)"
+    type="text"
+    id="title"
+  />
+  <div><button [disabled]="isDisabled">Submit</button></div>
+</form>
