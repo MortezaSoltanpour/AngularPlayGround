@@ -7,4 +7,16 @@
     id="title"
   />
   <div><button [disabled]="isDisabled">Submit</button></div>
+  <hr />
+  <label style="cursor: pointer" for="agreement">I agree with agreement</label>
+  <input
+    (change)="handleAgreementChanged($event)"
+    type="checkbox"
+    id="agreement"
+    name="agreement"
+  />
+  <div *ngIf="isAgreementChecked" style="color: green">You can add product</div>
+  <div *ngIf="!isAgreementChecked" style="color: red">
+    You can not add product
+  </div>
 </form>
