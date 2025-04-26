@@ -3,6 +3,8 @@ import { RouterOutlet } from '@angular/router';
 import { ProductListComponent } from './components/product-list/product-list.component';
 import { ProductCreateComponent } from './components/product-create/product-create.component';
 import { ContactUsComponent } from './components/contact-us/contact-us.component';
+import { BlogListsComponent } from './components/blog-lists/blog-lists.component';
+import { BlogDetailsComponent } from './components/blog-details/blog-details.component';
 
 @Component({
   selector: 'app-root',
@@ -11,6 +13,8 @@ import { ContactUsComponent } from './components/contact-us/contact-us.component
     ProductListComponent,
     ProductCreateComponent,
     ContactUsComponent,
+    BlogListsComponent,
+    BlogDetailsComponent,
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',
