@@ -10,7 +10,11 @@
         {{ blog.body }}
       </div>
       <div class="footer m-1">
-        <button (click)="handleLikeButton(blog.id)" class="btn btn-primary">
+        <button
+          [ngClass]="['btn', blog.liked ? 'btn-success' : 'btn-primary']"
+          (click)="handleLikeButton(blog.id)"
+          class="btn"
+        >
           {{ blog.liked ? "liked" : "like" }}
         </button>
       </div>

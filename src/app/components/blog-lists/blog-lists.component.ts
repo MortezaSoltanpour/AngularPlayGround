@@ -24,7 +24,13 @@ export class BlogListsComponent {
     this.idSelected = blogIdAttr ? parseInt(blogIdAttr, 10) : 0;
   }
 
-  handleLikeClickedFromDetails(e: any) {
-    console.log(e);
+  handleLikeClickedFromDetails(id: any) {
+    console.log(id, ' clicked');
+    let thisBlog = getBlogById(id);
+    console.table(thisBlog);
+    if (thisBlog) {
+      thisBlog.liked = !thisBlog.liked;
+    }
+    console.table(thisBlog);
   }
 }

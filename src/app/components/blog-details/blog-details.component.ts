@@ -6,12 +6,12 @@ import {
   SimpleChanges,
 } from '@angular/core';
 import { BlogDto } from '../../db/blogDto';
-import { NgIf } from '@angular/common';
+import { NgClass, NgIf } from '@angular/common';
 import { getBlogById } from '../../db/blogDb';
 
 @Component({
   selector: 'app-blog-details',
-  imports: [NgIf],
+  imports: [NgIf, NgClass],
   templateUrl: './blog-details.component.html',
   styleUrl: './blog-details.component.css',
 })
