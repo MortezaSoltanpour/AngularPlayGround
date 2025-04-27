@@ -8,14 +8,7 @@ import { FormsModule } from '@angular/forms';
   templateUrl: './blog-create.component.html',
 })
 export class BlogCreateComponent {
-  blog: BlogDto = {
-    id: 0,
-    author: '',
-    body: '',
-    brief: '',
-    liked: false,
-    title: '',
-  };
+  blog: BlogDto = this.resetBlogData();
 
   @Output('newblog')
   newBlogEventEmitter: EventEmitter<BlogDto> = new EventEmitter<BlogDto>();
@@ -23,5 +16,19 @@ export class BlogCreateComponent {
   handleBtn() {
     console.log(this.blog);
     this.newBlogEventEmitter.emit(this.blog);
+    this.resetBlogData();
+  }
+
+  resetBlogData(): BlogDto {
+    this.blog = {
+      id: 0,
+      author: '',
+      body: '',
+      brief: '',
+      liked: false,
+      title: '',
+    };
+
+    return this.blog;
   }
 }

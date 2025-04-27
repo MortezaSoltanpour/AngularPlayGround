@@ -36,7 +36,6 @@ export class BlogListsComponent {
   }
 
   addNewBlog(newItem: BlogDto) {
-    console.table(newItem);
     addNewBlog(newItem);
   }
 }
