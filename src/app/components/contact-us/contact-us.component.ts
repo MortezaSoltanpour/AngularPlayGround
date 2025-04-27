@@ -1,13 +1,13 @@
 import { Component, NgModule } from '@angular/core';
 import { contactusDto } from './contactusDto';
 import { FormsModule } from '@angular/forms';
+import { ParaHilighterDirective } from '../../directives/para-hilighter.directive';
 
 @Component({
   selector: 'app-contact-us',
   standalone: true,
-  imports: [FormsModule],
+  imports: [FormsModule, ParaHilighterDirective],
   templateUrl: './contact-us.component.html',
-  styleUrl: './contact-us.component.css',
 })
 export class ContactUsComponent {
   contactus: contactusDto = {
