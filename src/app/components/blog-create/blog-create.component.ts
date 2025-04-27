@@ -12,15 +12,21 @@ export class BlogCreateComponent {
   constructor(private toastr: ToastrService) {}
 
   showSuccess(message: string) {
-    this.toastr.success(message, 'Success');
+    this.toastr.success(message, 'Success', {
+      progressBar: true,
+    });
   }
 
   showError(message: string) {
-    this.toastr.error(message, 'Error');
+    this.toastr.error(message, 'Error', {
+      progressBar: true,
+    });
   }
 
   showWarning(message: string) {
-    this.toastr.warning(message, 'Warning');
+    this.toastr.warning(message, 'Warning', {
+      progressBar: true,
+    });
   }
 
   blog: BlogDto = this.resetBlogData();
