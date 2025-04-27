@@ -5,6 +5,7 @@ import { ProductCreateComponent } from './components/product-create/product-crea
 import { ContactUsComponent } from './components/contact-us/contact-us.component';
 import { BlogListsComponent } from './components/blog-lists/blog-lists.component';
 import { BlogDetailsComponent } from './components/blog-details/blog-details.component';
+import { BlogCreateComponent } from './components/blog-create/blog-create.component';
 
 @Component({
   selector: 'app-root',
@@ -15,6 +16,7 @@ import { BlogDetailsComponent } from './components/blog-details/blog-details.com
     ContactUsComponent,
     BlogListsComponent,
     BlogDetailsComponent,
+    BlogCreateComponent,
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',

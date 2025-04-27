@@ -1,9 +1,10 @@
 import { NgFor } from '@angular/common';
 import { Component } from '@angular/core';
+import { BlogCreateComponent } from '../blog-create/blog-create.component';
 
 @Component({
   selector: 'app-product-list',
-  imports: [NgFor],
+  imports: [NgFor, BlogCreateComponent],
   templateUrl: './product-list.component.html',
   styleUrl: './product-list.component.css',
 })

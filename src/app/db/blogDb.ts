@@ -73,3 +73,9 @@ export function getAllBlogs(): BlogDto[] {
 export function getBlogById(id: number): BlogDto | undefined {
   return blogItems.find((p) => p.id == id);
 }
+
+export function addNewBlog(blog: BlogDto) {
+  let newItem: BlogDto = { ...blog };
+  newItem.id = blogItems.length + 1;
+  blogItems.push(newItem);
+}
