@@ -1,12 +1,11 @@
 import { NgFor } from '@angular/common';
 import { Component } from '@angular/core';
-import { BlogCreateComponent } from '../blog-create/blog-create.component';
+import { ProductCreateComponent } from '../product-create/product-create.component';
 
 @Component({
   selector: 'app-product-list',
-  imports: [NgFor, BlogCreateComponent],
+  imports: [NgFor, ProductCreateComponent],
   templateUrl: './product-list.component.html',
-  styleUrl: './product-list.component.css',
 })
 export class ProductListComponent {
   myProduct = {
