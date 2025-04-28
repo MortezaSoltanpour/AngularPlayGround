@@ -1,4 +1,18 @@
-import { Component } from '@angular/core';
+import {
+  AfterContentChecked,
+  AfterContentInit,
+  AfterViewChecked,
+  AfterViewInit,
+  Component,
+  DoCheck,
+  ElementRef,
+  OnChanges,
+  OnDestroy,
+  OnInit,
+  SimpleChanges,
+  ViewChild,
+  viewChild,
+} from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { ProductListComponent } from './components/product-list/product-list.component';
 import { ProductCreateComponent } from './components/product-create/product-create.component';
@@ -21,6 +35,59 @@ import { BlogCreateComponent } from './components/blog-create/blog-create.compon
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',
 })
-export class AppComponent {
+export class AppComponent
+  implements
+    OnChanges,
+    OnInit,
+    DoCheck,
+    AfterContentInit,
+    AfterContentChecked,
+    AfterViewChecked,
+    AfterViewInit,
+    OnDestroy
+{
   title = 'hello world';
+
+  constructor() {
+    console.log('constructor');
+  }
+
+  ngOnChanges(): void {
+    console.log('ngOnChanges');
+  }
+
+  ngOnInit(): void {
+    console.log('ngOnInit');
+  }
+
+  ngDoCheck(): void {
+    console.log('ngDoCheck');
+  }
+
+  ngAfterContentInit(): void {
+    console.log('ngAfterContentInit');
+  }
+
+  ngAfterContentChecked(): void {
+    console.log('ngAfterContentChecked');
+  }
+
+  ngOnDestroy(): void {
+    console.log('ngOnDestroy');
+  }
+
+  ngAfterViewInit(): void {
+    console.log('ngAfterViewInit');
+  }
+
+  ngAfterViewChecked(): void {
+    console.log('ngAfterViewChecked');
+  }
+
+  @ViewChild('changable')
+  divForChange!: ElementRef;
+
+  handleBtnChangeText() {
+    this.divForChange.nativeElement.innerText = 'Text has been changed';
+  }
 }

@@ -23,9 +23,6 @@ export class BlogDetailsComponent {
   ngOnChanges(changes: SimpleChanges) {
     if (changes['blogId']) {
       const newId = changes['blogId'].currentValue;
-      console.log('Blog ID changed to:', newId);
-
-      // Call your method to reload details
       this.loadBlogDetails(newId);
     }
   }
