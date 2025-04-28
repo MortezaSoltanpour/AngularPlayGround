@@ -15,16 +15,40 @@
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto">
       <li class="nav-item">
-        <a class="nav-link" routerLink="/users">Users </a>
+        <a
+          class="nav-link"
+          [routerLinkActiveOptions]="{ exact: true }"
+          routerLinkActive="active"
+          routerLink="/users"
+          >Users
+        </a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" routerLink="/contactus">Contact us </a>
+        <a
+          class="nav-link"
+          [routerLinkActiveOptions]="{ exact: true }"
+          routerLinkActive="active"
+          routerLink="/contactus"
+          >Contact us
+        </a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" routerLink="/blog">Blog </a>
+        <a
+          class="nav-link"
+          [routerLinkActiveOptions]="{ exact: true }"
+          routerLinkActive="active"
+          routerLink="/blog"
+          >Blog
+        </a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" routerLink="/products">Products </a>
+        <a
+          class="nav-link"
+          [routerLinkActiveOptions]="{ exact: true }"
+          routerLinkActive="active"
+          routerLink="/products"
+          >Products
+        </a>
       </li>
     </ul>
   </div>

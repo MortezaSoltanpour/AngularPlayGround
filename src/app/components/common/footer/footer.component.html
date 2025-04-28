@@ -16,26 +16,50 @@
 
     <ul class="nav col-md-4 justify-content-end">
       <li class="nav-item">
-        <a class="nav-link px-2 text-body-secondary" routerLink="/"> Home </a>
+        <a
+          class="nav-link px-2 text-body-secondary"
+          [routerLinkActiveOptions]="{ exact: true }"
+          routerLinkActive="active"
+          routerLink="/"
+        >
+          Home
+        </a>
       </li>
       <li class="nav-item">
-        <a class="nav-link px-2 text-body-secondary" routerLink="/users">
+        <a
+          class="nav-link px-2 text-body-secondary"
+          [routerLinkActiveOptions]="{ exact: true }"
+          routerLinkActive="active"
+          routerLink="/users"
+        >
           Users
         </a>
       </li>
 
       <li class="nav-item">
-        <a class="nav-link px-2 text-body-secondary" routerLink="/contactus"
+        <a
+          class="nav-link px-2 text-body-secondary"
+          [routerLinkActiveOptions]="{ exact: true }"
+          routerLinkActive="active"
+          routerLink="/contactus"
           >Contact us
         </a>
       </li>
       <li class="nav-item">
-        <a class="nav-link px-2 text-body-secondary" routerLink="/blog"
+        <a
+          class="nav-link px-2 text-body-secondary"
+          [routerLinkActiveOptions]="{ exact: true }"
+          routerLinkActive="active"
+          routerLink="/blog"
           >Blog
         </a>
       </li>
       <li class="nav-item">
-        <a class="nav-link px-2 text-body-secondary" routerLink="/products"
+        <a
+          class="nav-link px-2 text-body-secondary"
+          [routerLinkActiveOptions]="{ exact: true }"
+          routerLinkActive="active"
+          routerLink="/products"
           >Products
         </a>
       </li>
