@@ -22,6 +22,7 @@ import { BlogDetailsComponent } from './components/blog-details/blog-details.com
 import { BlogCreateComponent } from './components/blog-create/blog-create.component';
 import { UserListComponent } from './components/user-list/user-list.component';
 import { NavbarComponent } from './components/common/navbar/navbar.component';
+import { FooterComponent } from './components/common/footer/footer.component';
 
 @Component({
   selector: 'app-root',
@@ -35,6 +36,7 @@ import { NavbarComponent } from './components/common/navbar/navbar.component';
     BlogCreateComponent,
     UserListComponent,
     NavbarComponent,
+    FooterComponent,
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',
