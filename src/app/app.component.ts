@@ -21,6 +21,7 @@ import { BlogListsComponent } from './components/blog-lists/blog-lists.component
 import { BlogDetailsComponent } from './components/blog-details/blog-details.component';
 import { BlogCreateComponent } from './components/blog-create/blog-create.component';
 import { UserListComponent } from './components/user-list/user-list.component';
+import { NavbarComponent } from './components/common/navbar/navbar.component';
 
 @Component({
   selector: 'app-root',
@@ -33,6 +34,7 @@ import { UserListComponent } from './components/user-list/user-list.component';
     BlogDetailsComponent,
     BlogCreateComponent,
     UserListComponent,
+    NavbarComponent,
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',
