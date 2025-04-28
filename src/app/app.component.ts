@@ -20,6 +20,7 @@ import { ContactUsComponent } from './components/contact-us/contact-us.component
 import { BlogListsComponent } from './components/blog-lists/blog-lists.component';
 import { BlogDetailsComponent } from './components/blog-details/blog-details.component';
 import { BlogCreateComponent } from './components/blog-create/blog-create.component';
+import { UserListComponent } from './components/user-list/user-list.component';
 
 @Component({
   selector: 'app-root',
@@ -31,6 +32,7 @@ import { BlogCreateComponent } from './components/blog-create/blog-create.compon
     BlogListsComponent,
     BlogDetailsComponent,
     BlogCreateComponent,
+    UserListComponent,
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',
