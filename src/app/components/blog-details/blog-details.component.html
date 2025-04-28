@@ -11,12 +11,15 @@
       </div>
       <div class="footer m-1">
         <button
-          [ngClass]="['btn', blog.liked ? 'btn-success' : 'btn-primary']"
+          [ngClass]="['btn ', blog.liked ? 'btn-success' : 'btn-primary']"
           (click)="handleLikeButton(blog.id)"
           class="btn"
         >
           {{ blog.liked ? "liked" : "like" }}
         </button>
+        <a [routerLink]="['/bloginfo', blog.id]" class="mx-4 text-muted"
+          >Show more</a
+        >
       </div>
     </div>
   </div>

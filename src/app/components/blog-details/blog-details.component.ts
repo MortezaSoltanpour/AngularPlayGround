@@ -8,12 +8,12 @@ import {
 import { BlogDto } from '../../db/blogDto';
 import { NgClass, NgIf } from '@angular/common';
 import { getBlogById } from '../../db/blogDb';
+import { RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-blog-details',
-  imports: [NgIf, NgClass],
+  imports: [NgIf, NgClass, RouterModule],
   templateUrl: './blog-details.component.html',
-  styleUrl: './blog-details.component.css',
 })
 export class BlogDetailsComponent {
   @Input('blogId')
