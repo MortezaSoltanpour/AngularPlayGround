@@ -1,0 +1,17 @@
+<div class="row m-12" *ngIf="blogs">
+  <div class="col-4 p-2" *ngFor="let item of blogs">
+    <div class="card p-2">
+      <div class="header m-1">
+        <h4>
+          {{ item.title }}
+        </h4>
+      </div>
+      <div class="body m-1">
+        {{ item.brief }}
+      </div>
+      <span class="text-muted m-1">
+        {{ item.author }}
+      </span>
+    </div>
+  </div>
+</div>
