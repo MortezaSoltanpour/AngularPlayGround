@@ -4,12 +4,18 @@ import { addNewBlog, getAllBlogs, getBlogById } from '../../db/blogDb';
 import { NgFor, NgIf } from '@angular/common';
 import { BlogDetailsComponent } from '../blog-details/blog-details.component';
 import { BlogCreateComponent } from '../blog-create/blog-create.component';
+import { ShortenerPipe } from '../../pipes/shortener.pipe';
 
 @Component({
   selector: 'app-blog-lists',
-  imports: [NgFor, NgIf, BlogDetailsComponent, BlogCreateComponent],
+  imports: [
+    ShortenerPipe,
+    NgFor,
+    NgIf,
+    BlogDetailsComponent,
+    BlogCreateComponent,
+  ],
   templateUrl: './blog-lists.component.html',
-  styleUrl: './blog-lists.component.css',
 })
 export class BlogListsComponent {
   blogs: BlogDto[];
