@@ -4,9 +4,14 @@ import { Pipe, PipeTransform } from '@angular/core';
   name: 'shortener',
 })
 export class ShortenerPipe implements PipeTransform {
-  transform(value: string, ...args: unknown[]): unknown {
-    if (value.length > 40) {
-      return `${value.slice(0, 40)}...`;
+  transform(
+    value: string,
+    stringLength: number,
+    moreCharacter: string = '...',
+    ...args: unknown[]
+  ): unknown {
+    if (value.length > stringLength) {
+      return `${value.slice(0, stringLength)}${moreCharacter}`;
     }
     return value;
   }

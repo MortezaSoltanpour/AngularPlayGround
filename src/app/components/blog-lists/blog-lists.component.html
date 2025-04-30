@@ -9,7 +9,7 @@
             </h4>
           </div>
           <div class="body m-1">
-            {{ item.brief | shortener }}
+            {{ item.brief | shortener : 50 : "*_*" }}
           </div>
           <span class="text-muted m-1">
             {{ item.author }}
