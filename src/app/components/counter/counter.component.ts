@@ -29,6 +29,7 @@ export class CounterComponent {
   handleIncrease() {
     this.counter.set(this.counter() + 1);
   }
+  show: boolean = false;
 
   constructor() {
     effect((data) => {

@@ -43,3 +43,51 @@
 <p>new section place holder</p>
 }
 <hr />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+@defer (on viewport) {
+<p>This loads when it scrolls into view.</p>
+} @placeholder {
+<p>Scroll to see more...</p>
+}
+<hr />
+<button (click)="show = true">Load More</button>
+
+@defer (when show) {
+<p>Now you can see the extra content.</p>
+} @placeholder {
+<p>Click the button to load content.</p>
+}
+<hr />
