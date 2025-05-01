@@ -31,3 +31,15 @@
     </div>
   </div>
 </div>
+<hr />
+<h1>This is defer section</h1>
+@defer (on timer(2000)) {
+<h2>After 2 seconds</h2>
+} @error {
+<h2>error happend</h2>
+} @loading {
+<p>new section is loading</p>
+} @placeholder {
+<p>new section place holder</p>
+}
+<hr />

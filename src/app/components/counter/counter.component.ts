@@ -31,9 +31,10 @@ export class CounterComponent {
   }
 
   constructor() {
-    effect(() => {
+    effect((data) => {
       console.log(this.counter());
       console.log(this.price());
+      console.log(data);
     });
   }
 }
