@@ -1,7 +1,12 @@
 <div class="container">
   <div class="row">
     <div class="col-6">
-      <h2>Count : {{ counter() }}</h2>
+      <h2>
+        <ul>
+          <li>Count : {{ counter() }}</li>
+          <li>Price : {{ price() }}</li>
+        </ul>
+      </h2>
     </div>
     <div class="col-6">
       <h2>
@@ -13,7 +18,10 @@
   <div class="row">
     <div class="col-6">
       <button (click)="handleIncrease()" class="m-4 btn btn-success">
-        Increase
+        Increase count
+      </button>
+      <button (click)="handleIncreasePrice()" class="m-4 btn btn-success">
+        Increase price
       </button>
     </div>
     <div class="col-6">
