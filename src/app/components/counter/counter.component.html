@@ -4,14 +4,14 @@
       <h2>
         <ul>
           <li>Count : {{ counter() }}</li>
-          <li>Price : {{ price() }}</li>
+          <li>Price : {{ price() | number }}</li>
         </ul>
       </h2>
     </div>
     <div class="col-6">
       <h2>
         Double Count :
-        {{ doubleCounter() }}
+        {{ doubleCounter() | currency : "CAD" }}
       </h2>
     </div>
   </div>

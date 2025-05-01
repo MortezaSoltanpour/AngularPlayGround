@@ -1,3 +1,4 @@
+import { CommonModule } from '@angular/common';
 import {
   Component,
   computed,
@@ -8,7 +9,7 @@ import {
 
 @Component({
   selector: 'app-counter',
-  imports: [],
+  imports: [CommonModule],
   templateUrl: './counter.component.html',
 })
 export class CounterComponent {
