@@ -2,6 +2,7 @@ import { CommonModule } from '@angular/common';
 import {
   Component,
   computed,
+  effect,
   signal,
   Signal,
   WritableSignal,
@@ -27,5 +28,12 @@ export class CounterComponent {
 
   handleIncrease() {
     this.counter.set(this.counter() + 1);
+  }
+
+  constructor() {
+    effect(() => {
+      console.log(this.counter());
+      console.log(this.price());
+    });
   }
 }
