@@ -14,9 +14,10 @@
           <span class="text-muted m-1">
             {{ item.author }}
           </span>
-          <span class="m-1 text-success" *ngIf="item.liked">
-            you liked it
-          </span>
+          @if (item.liked) {
+          <span class="m-1 text-success"> you liked it </span>
+          }
+
           <span class="m-1 text-warning" *ngIf="!item.liked">
             you didn't liked it
           </span>
