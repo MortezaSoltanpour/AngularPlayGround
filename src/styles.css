@@ -1,3 +1,7 @@
 .myNewClass {
   border: solid thin gray;
 }
+
+.myNewClass2 {
+  border: dashed thin gray;
+}
