@@ -6,6 +6,7 @@ import { ProductListComponent } from './components/product-list/product-list.com
 import { BlogInfoComponent } from './components/blog-info/blog-info.component';
 import { BlogApiComponent } from './components/blog-api/blog-api.component';
 import { CounterComponent } from './components/counter/counter.component';
+import { AboutUsComponent } from './components/about-us/about-us.component';
 
 export const routes: Routes = [
   { path: 'users', component: UserListComponent },
@@ -15,4 +16,5 @@ export const routes: Routes = [
   { path: 'products', component: ProductListComponent },
   { path: 'blogapi', component: BlogApiComponent },
   { path: 'counter', component: CounterComponent },
+  { path: 'aboutus', component: AboutUsComponent },
 ];
